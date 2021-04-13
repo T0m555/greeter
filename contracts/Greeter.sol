@@ -1,7 +1,10 @@
 pragma solidity >= 0.4.0 <0.7.0;
 
-contract Greeter {
+// import "openzeppelin-solidity/contracts/ownership/Ownable.sol";
+
+contract Greeter  {
   string private _greeting = "Hello, World!";
+  
   address private _owner;
   constructor() public{
     _owner = msg.sender;
