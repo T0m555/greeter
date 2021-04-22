@@ -4,6 +4,7 @@ pragma solidity >= 0.4.0 <0.7.0;
 
 contract Greeter is Ownable {
   string private _greeting = "Hello, World!";
+<<<<<<< HEAD
   
   // address private _owner;
   // constructor() public{
@@ -17,13 +18,17 @@ contract Greeter is Ownable {
   //   );
   //   _;
   // }
+=======
+  address private _owner;
+>>>>>>> parent of 08ec8d9 (ownableの実装)
 
   function greet() external view returns(string memory){
     return _greeting;
   }
 
-  function setGreeting(string calldata greeting) external onlyOwner {
+  function setGreeting(string calldata greeting) external{
     _greeting = greeting;
+
   }
 
 //   function owner() public view returns(address){
